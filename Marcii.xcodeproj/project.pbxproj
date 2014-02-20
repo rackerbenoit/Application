@@ -23,6 +23,7 @@
 		9B71B5DA18B5D36500AD39B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71B5B618B5D36500AD39B2 /* UIKit.framework */; };
 		9B71B5E218B5D36500AD39B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B71B5E018B5D36500AD39B2 /* InfoPlist.strings */; };
 		9B71B5E418B5D36500AD39B2 /* MarciiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B71B5E318B5D36500AD39B2 /* MarciiTests.m */; };
+		9B71B5EE18B5D38F00AD39B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B71B5ED18B5D38F00AD39B2 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		9B71B5DF18B5D36500AD39B2 /* MarciiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarciiTests-Info.plist"; sourceTree = "<group>"; };
 		9B71B5E118B5D36500AD39B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B71B5E318B5D36500AD39B2 /* MarciiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarciiTests.m; sourceTree = "<group>"; };
+		9B71B5ED18B5D38F00AD39B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			files = (
 				9B71B5B518B5D36500AD39B2 /* CoreGraphics.framework in Frameworks */,
 				9B71B5B718B5D36500AD39B2 /* UIKit.framework in Frameworks */,
+				9B71B5EE18B5D38F00AD39B2 /* MapKit.framework in Frameworks */,
 				9B71B5B318B5D36500AD39B2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +109,7 @@
 		9B71B5B118B5D36500AD39B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B71B5ED18B5D38F00AD39B2 /* MapKit.framework */,
 				9B71B5B218B5D36500AD39B2 /* Foundation.framework */,
 				9B71B5B418B5D36500AD39B2 /* CoreGraphics.framework */,
 				9B71B5B618B5D36500AD39B2 /* UIKit.framework */,
@@ -207,6 +211,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Paul Benoit";
 				TargetAttributes = {
+					9B71B5AE18B5D36500AD39B2 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					9B71B5D518B5D36500AD39B2 = {
 						TestTargetID = 9B71B5AE18B5D36500AD39B2;
 					};
